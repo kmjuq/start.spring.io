@@ -25,6 +25,8 @@
 						<configuration>
 							<nodeVersion>v12.13.0</nodeVersion>
 							<yarnVersion>v1.22.4</yarnVersion>
+							<nodeDownloadRoot>https://npm.taobao.org/dist/</nodeDownloadRoot>
+							<yarnDownloadRoot>https://npm.taobao.org/mirrors/yarn/</yarnDownloadRoot>
 						</configuration>
 					</execution>
 					<execution>
@@ -32,6 +34,9 @@
 						<goals>
 							<goal>yarn</goal>
 						</goals>
+						<configuration>
+							<npmRegistryURL>https://registry.npm.taobao.org</npmRegistryURL>
+						</configuration>
 					</execution>
 					<execution>
 						<id>yarn build</id>
